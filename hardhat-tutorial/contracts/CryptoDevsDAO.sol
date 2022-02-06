@@ -77,9 +77,9 @@ constructor(address _nftMarketplace, address _cryptoDevsNFT) payable {
 
 // Create a modifier which only allows a function to be
 // called by someone who owns at least 1 CryptoDevsNFT
-modifier nftHolderOnly() {
-    require(cryptoDevsNFT.balanceOf(msg.sender) > 0, "NOT_A_DAO_MEMBER");
-    _;
+// modifier nftHolderOnly() {
+//    require(cryptoDevsNFT.balanceOf(msg.sender) > 0, "NOT_A_DAO_MEMBER");
+//    _;
 }
 
 // Create a modifier which only allows a function to be
